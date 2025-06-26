@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #333;
+    /* background-color: gray; */
+}
+body{
+    font-family: sans-serif;
+}
+#navbar_logo{
+    display:flex;
+    gap:5px;
+   justify-content: center;
+    align-items: center;
+}
+#navbar_logo img{
+    border-radius:50%;
+    width: 88px; 
+    /* height: 80px;   */
+    /* object-fit: cover; */
+
+}
+
+
+#navbar_Menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 10px ;
+    /* background-color: bisque; */
+}
+#navbar_Menu ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+#navbar_Menu ul li {
+    cursor: pointer;
+}
+#navbar_Menu ul li:hover {
+    color:red;/* Change to your desired hover color */
+}
+#navbar_cart 
+{
+    display:flex;
+    gap:20px
+}
+#navbar_cart img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    cursor: pointer;
+}
+button:active{
+    transform:scale(0.9);
+}

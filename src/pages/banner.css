@@ -1,0 +1,25 @@
+#category{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+#category img{
+    width: 100px;
+    height: 100px;
+    object-fit:contain;
+    border-radius: 50%; ;
+    border: 1px solid ;
+}
+#category div{
+    text-align: center;
+    font-size: 20px;
+}
+#category img:hover{
+    border-color:red;
+    transform: scale(1.1);
+    transition:0.3s; 
+    cursor: pointer;
+}

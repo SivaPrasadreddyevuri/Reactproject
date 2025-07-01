@@ -29,7 +29,7 @@ body{
     justify-content: space-between;
     align-items: center;    
     padding: 10px ;
-    /* background-color: bisque; */
+    background-color: bisque;
 }
 #navbar_Menu ul {
     list-style: none;
@@ -51,6 +51,7 @@ body{
     width: 30px;
     height: 30px;
     cursor: pointer;
+    mix-blend-mode: multiply;
 }
 button{
     padding: 5px 10px;

@@ -1,9 +1,12 @@
-import './navbar.css'; // Assuming you have a CSS file for styling the navbar   
+import './navbar.css'; // Ensure the CSS file is correctly linked
 import logo from '../assests/images/logo.png'; // Adjust the path as necessary
-import cart from '../assests/images/cart.png'; // Adjust the path as necessary
+import cart from '../assests/images/cart.png';
+
+
+
  const Navbar = () => {
   return (
-    <div>
+    <>
         <div id="navbar_Menu">
             <div id="navbar_logo">
                 <img src={logo} alt="logo"/>
@@ -23,8 +26,7 @@ import cart from '../assests/images/cart.png'; // Adjust the path as necessary
                 <button>login</button>
             </div>
          </div>
-
-    </div>
+    </>
   )
 }
 export default Navbar;

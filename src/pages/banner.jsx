@@ -1,17 +1,41 @@
+import "bootstrap/dist/css/bootstrap.min.css"; 
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 import men from "../components/assests/images/men.png";
 import women from "../components/assests/images/women.png";
 import kids from "../components/assests/images/kids.png";
-import banner from "../components/assests/videos/banner.mp4"; // Adjust the path as necessary
+import female from "../components/assests/images/female.jpg"
+import children from "../components/assests/images/children.jpg"
+import cloths from "../components/assests/images/cloths.jpg"
 
-import "./banner.css"; // Ensure the CSS file is correctly linked
+import "./banner .css"; // Ensure the CSS file is correctly linked
+
+
 const Banner = () => {
   return (
     <>
     <div id="banner">
-        <video  autoPlay muted loop id="banner_video" width={"100%"}>
-           <source src={banner} />
-              Your browser does not support the video tag.
-        </video>
+        <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
+  <div className="carousel-inner">
+    <div className="carousel-item active" data-bs-interval="1000">
+      <img src={female} className="d-block w-100" alt="..." />
+    </div>
+    <div className="carousel-item" data-bs-interval="2000">
+      <img src={cloths} className="d-block w-100" alt="..."/>
+    </div>
+    <div className="carousel-item">
+      <img src={children} className="d-block w-100" alt="..."/>
+    </div>
+  </div>
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Previous</span>
+  </button>
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Next</span>
+  </button>
+</div>
     </div>
       <div id="category">
         <div id="men">

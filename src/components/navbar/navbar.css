@@ -26,12 +26,16 @@ body{
 
 #navbar_Menu{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;    
-    padding: 10px ;
-    background-color: bisque;
+    padding:auto;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: beige;
+
 }
-#navbar_Menu ul {
+/* #navbar_Menu ul {
     list-style: none;
     display: flex;
     gap: 50px;
@@ -40,8 +44,8 @@ body{
     cursor: pointer;
 }
 #navbar_Menu ul li:hover {
-    color:red;/* Change to your desired hover color */
-}
+    color:red;
+} */
 #navbar_cart 
 {
     display:flex;
@@ -53,13 +57,16 @@ body{
     cursor: pointer;
     mix-blend-mode: multiply;
 }
-button{
+#navbar_cart button{
     padding: 5px 10px;
+    color: white;
+    background-color:forestgreen;
     border: none;
     border-radius: 5px;
-    background-color: #4CAF50; /* Green */
-    color: white;
     cursor: pointer;
+    font-size: 16px;    
+
+
 }
 button:active{
     transform:scale(0.9);

@@ -64,6 +64,7 @@ const Navbar = () => {
           <img src={cart} alt="cart logo" />
           <button>login</button>
         </div>
+        
       </div>
     </>
   );

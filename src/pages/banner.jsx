@@ -1,15 +1,14 @@
-import "bootstrap/dist/css/bootstrap.min.css"; 
+import "./banner.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
+// Use the correct, consistent paths and file names.
+// Ensure all images exist with matching case.
 import men from "../components/assests/images/men.png";
-import women from "../components/assests/images/women.png";
+import women from "../components/assests/images/Women.png";
 import kids from "../components/assests/images/kids.png";
-import female from "../components/assests/images/female.jpg"
-import children from "../components/assests/images/children.jpg"
-import cloths from "../components/assests/images/cloths.jpg"
-
-import "./banner .css"; // Ensure the CSS file is correctly linked
-
+import cloths from "../components/assests/images/cloths.jpg";
+import female from "../components/assests/images/female.jpg";
 
 const Banner = () => {
   return (
@@ -18,13 +17,13 @@ const Banner = () => {
         <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active" data-bs-interval="1000">
-      <img src={female} className="d-block w-100" alt="..." />
+      <img src={cloths} className="d-block w-100 " alt="..." />
     </div>
     <div className="carousel-item" data-bs-interval="2000">
-      <img src={cloths} className="d-block w-100" alt="..."/>
+      <img src={female} className="d-block w-100" alt="..."/>
     </div>
     <div className="carousel-item">
-      <img src={children} className="d-block w-100" alt="..."/>
+      <img src={cloths} className="d-block w-100" alt="..."/>
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">

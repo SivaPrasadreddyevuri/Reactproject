@@ -18,8 +18,13 @@
     font-size: 20px;
 }
 #category img:hover{
-    border-color:red;
+    border-color:rgb(3, 203, 248);
     transform: scale(1.1);
-    transition:0.3s; 
     cursor: pointer;
+}
+    
+#banner img{
+    height: 500px;
+    width: 100%;
+    object-fit:cover;
 }
